@@ -249,7 +249,7 @@ flowchart TD
 
 #### 1. Tampilan Awal Program
 
-![Menu Utama](screenshots/01-menu-utama.png)
+![Menu Utama](Screenshots/Screenshot 2026-09-25 150725.png)
 
 **Penjelasan:** Tampilan pertama saat program dijalankan. Terlihat data contoh (2 member, 3 alat gym) sudah otomatis termuat dari `Main.java`. Pengguna diberi pilihan **Kelola Member**, **Kelola Alat Gym**, atau **Keluar**.
 
@@ -259,31 +259,31 @@ flowchart TD
 
 #### 2. Submenu Kelola Member
 
-![Submenu Member](screenshots/02-submenu-member.png)
+![Submenu Member](Screenshots/Screenshot 2026-09-25 151232.png)
 
 **Penjelasan:** Muncul setelah memilih `1` di menu utama. Menampilkan 4 pilihan operasi CRUD untuk data member.
 
 #### 3. Tambah Member (Create)
 
-![Tambah Member](screenshots/03-tambah-member.png)
+![Tambah Member](Screenshots/Screenshot 2026-09-25 151526.png)
 
 **Penjelasan:** Pengguna memasukkan ID, nama, no HP, jenis membership, dan status. Data baru dibungkus jadi objek `Member` lalu ditambahkan ke `ArrayList` lewat `gym.tambahMember(...)`.
 
 #### 4. Lihat Semua Member (Read)
 
-![Lihat Member](screenshots/04-lihat-member.png)
+![Lihat Member](Screenshots/Screenshot 2026-09-25 151610.png)
 
 **Penjelasan:** Menampilkan seluruh data member yang tersimpan, termasuk member yang baru saja ditambahkan, hasil perulangan `for` yang memanggil `tampilkanInfo()` di tiap objek `Member`.
 
 #### 5. Update Status Member (Update)
 
-![Update Member](screenshots/05-update-member.png)
+![Update Member](Screenshots/Screenshot 2026-09-25 151636.png)
 
 **Penjelasan:** Pengguna memasukkan ID member yang ingin diubah statusnya (misal dari "Aktif" menjadi "Tidak Aktif"). Program mencari objek dengan ID yang cocok lalu mengubah nilainya lewat `setStatus(...)`.
 
 #### 6. Hapus Member (Delete)
 
-![Hapus Member](screenshots/06-hapus-member.png)
+![Hapus Member](Screenshots/Screenshot 2026-09-25 151654.png)
 
 **Penjelasan:** Pengguna memasukkan ID member yang ingin dihapus. Objek yang cocok akan dibuang dari `ArrayList` menggunakan `remove(...)`.
 
@@ -293,43 +293,43 @@ flowchart TD
 
 #### 7. Submenu Kelola Alat Gym
 
-![Submenu Alat](screenshots/07-submenu-alat.png)
+![Submenu Alat](Screenshots/Screenshot 2026-09-25 151737.png)
 
 **Penjelasan:** Muncul setelah memilih `2` di menu utama. Ada 3 opsi Create (berdasarkan subclass), 1 opsi Read, dan 2 opsi Update/Delete yang berlaku untuk semua jenis alat.
 
 #### 8. Tambah Alat Cardio (Create)
 
-![Tambah Cardio](screenshots/08-tambah-cardio.png)
+![Tambah Cardio](Screenshots/Screenshot 2026-09-25 152226.png)
 
 **Penjelasan:** Input khusus untuk alat cardio: kecepatan maksimal (km/jam) dan durasi maksimal (menit). Objek yang dibuat bertipe `CardioEquipment`.
 
 #### 9. Tambah Alat Beban (Create)
 
-![Tambah Beban](screenshots/09-tambah-beban.png)
+![Tambah Beban](Screenshots/Screenshot 2026-09-25 152416.png)
 
 **Penjelasan:** Input khusus untuk alat beban: beban maksimal (kg) dan tipe beban (Barbel/Dumbbell/Mesin). Objek yang dibuat bertipe `WeightEquipment`.
 
 #### 10. Tambah Alat Kalistenik (Create)
 
-![Tambah Kalistenik](screenshots/10-tambah-kalistenik.png)
+![Tambah Kalistenik](Screenshots/Screenshot 2026-09-25 152526.png)
 
 **Penjelasan:** Input khusus untuk alat kalistenik: kapasitas beban maksimal pengguna (kg) dan jumlah stasiun. Objek yang dibuat bertipe `CalisthenicsEquipment`.
 
 #### 11. Lihat Semua Alat (Read) — Bukti Polymorphism
 
-![Lihat Alat](screenshots/11-lihat-alat.png)
+![Lihat Alat](Screenshots/Screenshot 2026-09-25 153708.png)
 
 **Penjelasan:** Ini bukti nyata **polymorphism** bekerja — kode hanya memanggil satu baris `a.tampilkanInfo()` untuk tiap objek di `ArrayList<GymEquipment>`, tapi hasil outputnya berbeda format sesuai jenis alatnya masing-masing (cardio menampilkan kecepatan & durasi, beban menampilkan beban & tipe, kalistenik menampilkan kapasitas & jumlah stasiun).
 
 #### 12. Update Kondisi Alat (Update)
 
-![Update Alat](screenshots/12-update-alat.png)
+![Update Alat](Screenshots/Screenshot 2026-09-25 153731.png)
 
 **Penjelasan:** Pengguna memasukkan ID alat dan kondisi baru (Baik/Rusak/Maintenance). Method ini berlaku untuk semua jenis alat karena `kondisi` adalah atribut yang diwarisi dari `GymEquipment` (parent).
 
 #### 13. Hapus Alat (Delete)
 
-![Hapus Alat](screenshots/13-hapus-alat.png)
+![Hapus Alat](Screenshots/Screenshot 2026-09-25 153747.png)
 
 **Penjelasan:** Pengguna memasukkan ID alat yang ingin dihapus. Objek yang cocok (apapun jenisnya) akan dibuang dari `ArrayList<GymEquipment>`.
 
