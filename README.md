@@ -259,7 +259,7 @@ flowchart TD
 
 #### 2. Submenu Kelola Member
 
-![Submenu Member](Screenshots/Screenshot 2026-09-25 151232.png)
+![Submenu Member][(Screenshots/Screenshot 2026-09-25 151232.png)](https://github.com/kennygiovanni/UTS-PBO-SistemManajemenGym/blob/master/Screenshots/Screenshot%202026-09-25%20151232.png)
 
 **Penjelasan:** Muncul setelah memilih `1` di menu utama. Menampilkan 4 pilihan operasi CRUD untuk data member.
 
