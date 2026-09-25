@@ -259,31 +259,31 @@ flowchart TD
 
 #### 2. Submenu Kelola Member
 
-![Submenu Member][(Screenshots/Screenshot 2026-09-25 151232.png)](https://github.com/kennygiovanni/UTS-PBO-SistemManajemenGym/blob/master/Screenshots/Screenshot%202026-09-25%20151232.png)
+![Submenu Member](https://github.com/kennygiovanni/UTS-PBO-SistemManajemenGym/blob/master/Screenshots/Screenshot%202026-09-25%20151232.png)
 
 **Penjelasan:** Muncul setelah memilih `1` di menu utama. Menampilkan 4 pilihan operasi CRUD untuk data member.
 
 #### 3. Tambah Member (Create)
 
-![Tambah Member](Screenshots/Screenshot 2026-09-25 151526.png)
+![Tambah Member](https://github.com/kennygiovanni/UTS-PBO-SistemManajemenGym/blob/master/Screenshots/Screenshot%202026-09-25%20151526.png)
 
 **Penjelasan:** Pengguna memasukkan ID, nama, no HP, jenis membership, dan status. Data baru dibungkus jadi objek `Member` lalu ditambahkan ke `ArrayList` lewat `gym.tambahMember(...)`.
 
 #### 4. Lihat Semua Member (Read)
 
-![Lihat Member](Screenshots/Screenshot 2026-09-25 151610.png)
+![Lihat Member](https://github.com/kennygiovanni/UTS-PBO-SistemManajemenGym/blob/master/Screenshots/Screenshot%202026-09-25%20151610.png)
 
 **Penjelasan:** Menampilkan seluruh data member yang tersimpan, termasuk member yang baru saja ditambahkan, hasil perulangan `for` yang memanggil `tampilkanInfo()` di tiap objek `Member`.
 
 #### 5. Update Status Member (Update)
 
-![Update Member](Screenshots/Screenshot 2026-09-25 151636.png)
+![Update Member](https://github.com/kennygiovanni/UTS-PBO-SistemManajemenGym/blob/master/Screenshots/Screenshot%202026-09-25%20151636.png)
 
 **Penjelasan:** Pengguna memasukkan ID member yang ingin diubah statusnya (misal dari "Aktif" menjadi "Tidak Aktif"). Program mencari objek dengan ID yang cocok lalu mengubah nilainya lewat `setStatus(...)`.
 
 #### 6. Hapus Member (Delete)
 
-![Hapus Member](Screenshots/Screenshot 2026-09-25 151654.png)
+![Hapus Member](https://github.com/kennygiovanni/UTS-PBO-SistemManajemenGym/blob/master/Screenshots/Screenshot%202026-09-25%20151654.png)
 
 **Penjelasan:** Pengguna memasukkan ID member yang ingin dihapus. Objek yang cocok akan dibuang dari `ArrayList` menggunakan `remove(...)`.
 
@@ -293,43 +293,43 @@ flowchart TD
 
 #### 7. Submenu Kelola Alat Gym
 
-![Submenu Alat](Screenshots/Screenshot 2026-09-25 151737.png)
+![Submenu Alat](https://github.com/kennygiovanni/UTS-PBO-SistemManajemenGym/blob/master/Screenshots/Screenshot%202026-09-25%20151737.png)
 
 **Penjelasan:** Muncul setelah memilih `2` di menu utama. Ada 3 opsi Create (berdasarkan subclass), 1 opsi Read, dan 2 opsi Update/Delete yang berlaku untuk semua jenis alat.
 
 #### 8. Tambah Alat Cardio (Create)
 
-![Tambah Cardio](Screenshots/Screenshot 2026-09-25 152226.png)
+![Tambah Cardio](https://github.com/kennygiovanni/UTS-PBO-SistemManajemenGym/blob/master/Screenshots/Screenshot%202026-09-25%20152226.png)
 
 **Penjelasan:** Input khusus untuk alat cardio: kecepatan maksimal (km/jam) dan durasi maksimal (menit). Objek yang dibuat bertipe `CardioEquipment`.
 
 #### 9. Tambah Alat Beban (Create)
 
-![Tambah Beban](Screenshots/Screenshot 2026-09-25 152416.png)
+![Tambah Beban](https://github.com/kennygiovanni/UTS-PBO-SistemManajemenGym/blob/master/Screenshots/Screenshot%202026-09-25%20152416.png)
 
 **Penjelasan:** Input khusus untuk alat beban: beban maksimal (kg) dan tipe beban (Barbel/Dumbbell/Mesin). Objek yang dibuat bertipe `WeightEquipment`.
 
 #### 10. Tambah Alat Kalistenik (Create)
 
-![Tambah Kalistenik](Screenshots/Screenshot 2026-09-25 152526.png)
+![Tambah Kalistenik](https://github.com/kennygiovanni/UTS-PBO-SistemManajemenGym/blob/master/Screenshots/Screenshot%202026-09-25%20152526.png)
 
 **Penjelasan:** Input khusus untuk alat kalistenik: kapasitas beban maksimal pengguna (kg) dan jumlah stasiun. Objek yang dibuat bertipe `CalisthenicsEquipment`.
 
 #### 11. Lihat Semua Alat (Read) — Bukti Polymorphism
 
-![Lihat Alat](Screenshots/Screenshot 2026-09-25 153708.png)
+![Lihat Alat](https://github.com/kennygiovanni/UTS-PBO-SistemManajemenGym/blob/master/Screenshots/Screenshot%202026-09-25%20153708.png)
 
 **Penjelasan:** Ini bukti nyata **polymorphism** bekerja — kode hanya memanggil satu baris `a.tampilkanInfo()` untuk tiap objek di `ArrayList<GymEquipment>`, tapi hasil outputnya berbeda format sesuai jenis alatnya masing-masing (cardio menampilkan kecepatan & durasi, beban menampilkan beban & tipe, kalistenik menampilkan kapasitas & jumlah stasiun).
 
 #### 12. Update Kondisi Alat (Update)
 
-![Update Alat](Screenshots/Screenshot 2026-09-25 153731.png)
+![Update Alat](https://github.com/kennygiovanni/UTS-PBO-SistemManajemenGym/blob/master/Screenshots/Screenshot%202026-09-25%20153731.png)
 
 **Penjelasan:** Pengguna memasukkan ID alat dan kondisi baru (Baik/Rusak/Maintenance). Method ini berlaku untuk semua jenis alat karena `kondisi` adalah atribut yang diwarisi dari `GymEquipment` (parent).
 
 #### 13. Hapus Alat (Delete)
 
-![Hapus Alat](Screenshots/Screenshot 2026-09-25 153747.png)
+![Hapus Alat](https://github.com/kennygiovanni/UTS-PBO-SistemManajemenGym/blob/master/Screenshots/Screenshot%202026-09-25%20153747.png)
 
 **Penjelasan:** Pengguna memasukkan ID alat yang ingin dihapus. Objek yang cocok (apapun jenisnya) akan dibuang dari `ArrayList<GymEquipment>`.
 
