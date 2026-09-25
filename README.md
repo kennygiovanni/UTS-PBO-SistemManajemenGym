@@ -1,5 +1,5 @@
 ## Identitas Mahasiswa
-- **Nama:** Kenny
+- **Nama:** Kenny Giovanni Gavra
 - **NIM:** 2509116003
 - **Mata Kuliah:** Pemrograman Berbasis Objek
 - **Kelas:** A 2025
