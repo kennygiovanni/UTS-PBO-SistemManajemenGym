@@ -3,8 +3,6 @@ package operasional;
 import java.util.ArrayList;
 import data_gym.Member;
 import data_gym.GymEquipment;
-import data_gym.CardioEquipment;
-import data_gym.WeightEquipment;
 
 public class ManajemenGym {
     private ArrayList<Member> daftarMember;
@@ -84,25 +82,6 @@ public class ManajemenGym {
         if (!ditemukan) {
             System.out.println("Alat dengan ID tersebut tidak ditemukan.");
         }
-    }
-    
-    public void updateAtributKhususAlat(String idAlat, double nilaiPertama, Object nilaiKedua) {
-        for (GymEquipment a : daftarAlat) {
-            if (a.getIdAlat().equalsIgnoreCase(idAlat)) {
-                if (a instanceof CardioEquipment) {
-                    CardioEquipment c = (CardioEquipment) a;
-                    c.setKecepatanMaks(nilaiPertama);
-                    c.setDurasiMaks((int)nilaiKedua);
-                }  
-                else if (a instanceof WeightEquipment) {
-                    WeightEquipment w = (WeightEquipment) a;
-                    w.setBebanMaks(nilaiPertama);
-                    w.setTipeBeban((String) nilaiKedua);
-                }
-                return;
-            }
-        }
-        System.out.println("Alat dengan ID tersebut tidak ditemukan.");
     }
     
     public void hapusAlat(String idAlat) {
