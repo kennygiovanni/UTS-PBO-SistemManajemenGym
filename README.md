@@ -249,7 +249,7 @@ flowchart TD
 
 #### 1. Tampilan Awal Program
 
-![Menu Utama](Screenshots/Screenshot 2026-09-25 150725.png)
+![Menu Utama](https://github.com/kennygiovanni/UTS-PBO-SistemManajemenGym/blob/master/Screenshots/Screenshot%202026-09-25%20150725.png)
 
 **Penjelasan:** Tampilan pertama saat program dijalankan. Terlihat data contoh (2 member, 3 alat gym) sudah otomatis termuat dari `Main.java`. Pengguna diberi pilihan **Kelola Member**, **Kelola Alat Gym**, atau **Keluar**.
 
